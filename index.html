@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .weather {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 320px;
+                text-align: center;
+            }
+            input[type="text"] {
+                padding: 10px;
+                width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                margin-bottom: 12px;
+                font-size: 16px;
+            }
+            button {
+                padding: 10px;
+                width: 100%;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+            h4, p {
+                margin: 10px 0;
+                color: #333;
+            }
+            .weather-icon {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="weather">
+            <input type="text" placeholder="Enter city">
+            <button>Search</button>
+            <h4 class="name"></h4>
+            <p class="temp"></p> 
+            <p class="desc"></p> 
+            <p class="main"></p> 
+            <p class="wind"></p> 
+            <p class="hum"></p> 
+            <img class="weather-icon" src="" alt="Weather Icon" style="width:100px;">
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
